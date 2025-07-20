@@ -1,7 +1,2 @@
-madam
-hello
-racecar
-world
-noon
-apple
-insist
+Previous text remove now every thing will be overwritten with new contents
+ Now this is a new line in file im appending it
