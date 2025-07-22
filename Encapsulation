@@ -1,0 +1,78 @@
+#Create a class Employee with:
+#Public attribute: name
+#Private attribute: salary
+#Getter and setter methods to access and modify salary.
+#Add logic to prevent negative salaries.
+
+"""
+class Employee:
+    def __init__(self,name,salary):
+        self.name = name
+        self.__salary = salary
+
+    def get_salary(self):
+        return self.__salary
+
+    def set_salary(self,salary):
+        
+        if salary > 0:
+             self.__salary = salary
+             return
+        else:
+            print("Invalid Amount")
+
+e1 = Employee("Ali",30000)
+print(e1.name)
+
+#print(e1.salary)  #Can not access salary directly because it is a Private attribute 
+
+print(e1.get_salary()) # Can access private attribute through getter method
+
+"""
+
+
+
+#Create a class Student with:
+# Private attribute __marks
+# Public method set_marks(marks) that only allows values between 0–100.
+# Public method get_grade() that returns:
+# A if marks >= 80
+# B if marks >= 60
+# C if marks >= 4
+# F otherwise
+
+
+class Student:
+    def __init__(self,name,marks):
+        self.name = name
+        self.__marks = marks
+
+    def set_marks(self,marks):
+        if  0 <= marks <=100:
+            self.__marks = marks
+        else:
+            print("Invalid Marks...")
+
+    def get_grades(self):
+        if self.__marks >=80 and self.__marks <= 100:
+            print("Grade: A")
+        elif self.__marks >= 60 and self.__marks<=79 :
+            print("Grade: B")
+        elif self.__marks >= 4 and self.__marks <= 59:
+            print("Grade: C")
+        else:
+            print("Try something else.....")
+            
+
+
+s1 = Student("Umair",101)
+
+print(s1.name)
+s1.set_marks(909)
+s1.get_grades()
+
+
+
+
+
+
